@@ -1,0 +1,5 @@
+/* left menu : menu item */
+li.wp-menu-separator {
+    border-bottom: 1px solid #ccc;
+    padding: 0;
+}

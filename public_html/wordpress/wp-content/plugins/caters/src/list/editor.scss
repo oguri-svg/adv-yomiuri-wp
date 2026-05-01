@@ -1,0 +1,81 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ul.is-style-square li {
+    list-style-type: square;
+}
+
+ul.is-style-triangle li {
+    list-style-type: none;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: -17px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid black;
+    }
+}
+
+ol.is-style-paren,
+ol.is-style-round{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ol.is-style-paren {
+    counter-reset: number 0;
+    list-style: none;
+
+    li{
+        padding-left: 40px;
+
+        &::before {
+            counter-increment: number 1;
+            content: counter(number) '） ';
+            position: absolute;
+            left: 5px;
+            top: 1px;
+            height: 1.2vw;
+            line-height: 1.2vw;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+}
+
+ol.is-style-round {
+    counter-reset: number 0;
+    list-style: none;
+
+    li{
+        padding-left: 40px;
+        position: relative;
+        margin-bottom: 15px;
+        
+        &::before{
+            border: 1px solid #333333;
+            counter-increment: number 1;
+            content: counter(number);
+            position: absolute;
+            left: 0;
+            top: 13px;
+            transform: translateY(-50%);
+            width: 1.2vw;
+            height: 1.2vw;
+            line-height: 1.2vw;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+}

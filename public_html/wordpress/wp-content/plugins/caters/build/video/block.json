@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "cwc/video",
+  "version": "0.1.0",
+  "category": "cwc-blocks",
+  "attributes": {
+    "src": {
+      "type": "string",
+      "default": ""
+    },
+    "controls": {
+      "type": "boolean",
+      "default": true
+    },
+    "iframe": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "className": true,
+    "customClassName": false,
+    "anchor": false,
+    "background": {
+      "backgroundImage": true,
+      "backgroundSize": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

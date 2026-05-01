@@ -1,0 +1,18 @@
+.lzb-pro-control_code_editor {
+	.w-tc-editor {
+		font-family: ui-monospace, sfmono-regular, "SF Mono", consolas, "Liberation Mono", menlo, monospace;
+		font-size: 13px;
+		background-color: #fff;
+		border: 1px solid #757575;
+		border-radius: 2px;
+	}
+
+	.w-tc-editor-preview pre,
+	.w-tc-editor-preview code {
+		padding: 0;
+		margin: 0;
+		font-family: inherit;
+		font-size: inherit;
+		background: none;
+	}
+}

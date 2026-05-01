@@ -1,0 +1,82 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.m0{
+	margin: 0 !important;
+ }
+
+.mb-1{
+	margin-bottom: 10px !important;
+ }
+.memo{
+	font-size: 9px;
+	color: #666;
+	display: block;
+}
+
+.cwc-block-image{
+	box-sizing: border-box;
+	width: 100%;
+	
+	padding: 5px;
+	
+	margin: auto;
+	
+	&.align-left {
+		.image-container {
+			justify-content: flex-start;
+		}
+	}
+
+	&.align-right {
+		.image-container {
+			justify-content: flex-end;
+		}
+	}
+
+	&.align-center {
+		.image-container {
+			justify-content: center;
+		}
+	}
+
+	.image-container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			cursor: pointer;
+		}
+	
+		.resizable-image-container {
+			position: relative;
+			display: inline-block;
+		}
+	}
+
+	i.image-caption {
+		display: block;
+		font-size: 0.8em;
+		color: #666;
+		&.caption-align-left {
+			text-align: left;
+		}
+		&.caption-align-right {
+			text-align: right;
+		}
+		&.caption-align-center {
+			text-align: center;
+		}
+	}
+	.components-placeholder__error{
+		color: #dc3232;
+	}
+}

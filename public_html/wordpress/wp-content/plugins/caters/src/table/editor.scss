@@ -1,0 +1,55 @@
+.cwc-block-table{
+    .cwc-table{
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        td,
+        th{
+            word-break: break-word;
+            border:1px solid;
+            padding: .5em;
+            text-align: left;
+
+            &.has-text-align-right {
+                text-align: right !important;
+            }
+
+            &.has-text-align-center {
+                text-align: center !important;
+            }
+
+            &.has-text-align-left {
+                text-align: left !important;
+            }
+        }
+        
+        th{
+            background-color: #297cba;
+            color: #fff;
+            border-color: #000;
+        }
+        &.no-border{
+            td, th{
+                border: 1px dashed #ccc !important;
+            }
+        }
+    }
+    .selected-cell {
+        color: #000 !important;
+        border-color: #000 !important;
+        background-color: #e1f5ff !important;
+    }
+    figcaption.cwc-block-table-caption{
+        display: block;
+        font-size: 0.8em;
+        color: #666;
+        text-align: center;
+    }
+    
+}
+.cwc-table-tag {
+    .components-radio-control__group-wrapper {
+        flex-direction: initial;
+        justify-content: initial;
+    }
+}

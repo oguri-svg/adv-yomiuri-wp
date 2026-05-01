@@ -1,0 +1,20 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-cwc-file{
+	padding: 5px;
+	box-sizing: border-box;
+	a{
+		text-decoration: none;
+		svg{
+			margin-right: 10px;
+		}
+	}
+	.components-placeholder__error {
+		color: #dc3232;
+	}
+}

@@ -1,0 +1,17 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.cwc-block-video {
+	video,
+	iframe {
+		vertical-align: middle;
+		width: 100%;
+	}
+	iframe {
+		aspect-ratio: 16 / 9;
+	}
+}

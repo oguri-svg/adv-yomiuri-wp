@@ -1,0 +1,161 @@
+// Hide old slug namespace control, but keep the other panel output, which may contain notices.
+.block-editor-block-inspector .lazyblocks-pro-panel-custom-slug-namespace {
+	padding-bottom: 0;
+
+	+ div {
+		border-top: none;
+		padding-top: 0;
+
+		> .components-base-control {
+			display: none;
+		}
+	}
+}
+
+.lazyblocks-component-block-slug-prefix-dropdown-header {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+
+	h2 {
+		line-height: 1.4;
+		margin: 0;
+		text-wrap: pretty;
+		color: rgb(30, 30, 30);
+		font-size: calc(13px);
+		font-weight: 600;
+		display: block;
+	}
+
+	.components-button {
+		padding: 0;
+		min-width: 24px;
+		width: 24px;
+		height: 24px;
+		margin-left: auto;
+	}
+}
+
+.lzb-block-builder-namespace-selector {
+	.lzb-block-builder-namespace-collections {
+		display: flex;
+		flex-direction: column;
+		gap: 0.8rem;
+	}
+
+	.lzb-block-builder-namespace-collection-item {
+		transition: 0.2s padding-top, 0.2s padding-bottom, 0.2s border;
+
+		&.lzb-block-builder-namespace-collection-item-selected .lzb-block-builder-namespace-item-actions,
+		&:hover .lzb-block-builder-namespace-item-actions,
+		&:focus .lzb-block-builder-namespace-item-actions {
+			opacity: 1;
+		}
+	}
+	.lzb-block-builder-namespace-collection-item .lzb-block-builder-namespace-item-radio-wrapper {
+		display: flex;
+
+		.components-base-control__label {
+			margin-bottom: 0;
+		}
+		+ * {
+			margin-top: 0.5rem;
+			margin-left: 24px;
+		}
+	}
+	.lzb-block-builder-namespace-item-actions {
+		display: flex;
+		margin-left: auto;
+		opacity: 0;
+
+		button {
+			width: 1.4rem;
+			height: 1.4rem;
+			min-width: 1.4rem;
+			padding: 0;
+
+			svg {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	.lzb-block-builder-namespace-collection-item-editing {
+		padding: 0.8rem 1rem;
+		margin-left: -1rem;
+		margin-right: -1rem;
+		border-top: 1px solid #dadada;
+		border-bottom: 1px solid #dadada;
+
+		+ .lzb-block-builder-namespace-collection-item-editing {
+			border-top: none;
+			padding-top: 0;
+		}
+
+		.components-radio-control__label,
+		.components-radio-control__option-description {
+			display: none;
+		}
+		.lzb-block-builder-namespace-item-controls {
+			margin-top: -15px;
+		}
+	}
+
+	.lzb-block-builder-namespace-input {
+		display: flex;
+		flex-direction: column;
+
+		.components-base-control__field {
+			margin-bottom: 0;
+		}
+		.components-button {
+			padding: 1rem 0;
+			margin-left: auto;
+		}
+	}
+
+	.lzb-block-builder-namespace-item-form-actions {
+		display: flex;
+		align-items: center;
+		gap: 0.3rem;
+
+		button {
+			text-decoration: none;
+
+			&:hover,
+			&:focus {
+				text-decoration: underline;
+			}
+		}
+
+		span {
+			opacity: 0.3;
+		}
+
+		.lzb-block-builder-namespace-item-form-action-cancel {
+			color: #9d9d9d;
+		}
+	}
+
+	.lzb-block-builder-namespace-collection-actions {
+		display: flex;
+		gap: 0.5rem;
+	}
+
+	.lzb-block-builder-namespace-create-namespace {
+		margin-top: 1rem;
+		border-top: 1px solid #ddd;
+	}
+
+	.lzb-block-builder-namespace-custom-namespace {
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid #ddd;
+	}
+}
+
+.lzb-block-builder-namespace-error {
+	color: #cc1818;
+}

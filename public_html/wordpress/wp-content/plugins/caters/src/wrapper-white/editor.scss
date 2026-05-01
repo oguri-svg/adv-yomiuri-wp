@@ -1,0 +1,36 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wrapper-white {
+  border: 1px solid #ccc;
+  padding: 32px;
+  width: fit-content;
+  box-sizing: border-box;
+  width: 100%;
+
+  &:focus {
+    outline: 2px solid var(--wp-admin-theme-color);
+  }
+}
+
+.components-panel__row {
+  display: block;
+  width: 100%;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
+
+  .components-base-control__field {
+    width: 100%;
+  }
+
+  .components-text-control__input {
+    width: 100%;
+  }
+}

@@ -1,0 +1,59 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+.cwc-block-button {
+    margin-top: 0;
+    margin-bottom: 0;
+ 
+    &.align-left{
+        text-align: left;
+    }
+    &.align-center{
+        text-align: center;
+    }
+    &.align-right{
+        text-align: right;
+    }
+    .block-editor-rich-text__editable{
+        display: inline-block;
+        background-color: #32373c;
+        border-radius: 9999px;
+        padding: calc(.667em + 2px) calc(1.333em + 2px);
+        color: #fff;
+        white-space: pre-wrap;
+        min-width: 1px;
+        text-align: center;
+        word-break: break-word;
+    }
+}
+
+.wp-block-button-popver{
+    .wp-block-button-link-control {
+        width: 350px;
+        min-width: auto;
+        padding: 10px;
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .wp-block-button-link__field {
+                flex: 1 1 auto;
+                margin-right: 10px;
+
+                input {
+                    height: 40px;
+                }
+            }
+        }
+    }
+    .wp-block-button-target-toggle{
+        margin-top: 10px;
+    }
+}

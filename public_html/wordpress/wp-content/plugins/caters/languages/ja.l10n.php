@@ -1,0 +1,2 @@
+<?php
+return ['domain'=>'cwc-blocks','plural-forms'=>NULL,'messages'=>['Caters Blocks'=>'Catersブロック','Add inner block and video block'=>'インナーブロックとビデオブロックを追加'],'language'=>'ja_JP','x-generator'=>'Poedit 3.5'];

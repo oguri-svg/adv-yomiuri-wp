@@ -1,0 +1,95 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-cwc-block-content-image{
+	padding: 5px;
+	box-sizing: border-box;
+	&::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	&.image-right{
+		.content-image-image{
+			float: right;
+			margin-right: 0;
+			margin-left: 15px;
+		}
+	}
+	.content-image-image{
+		width: 50%;
+		float: left;
+		margin-right: 15px;
+		margin-left: 0;
+
+		.content-image-image-show {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.content-image-layout{
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: none;
+				width: 100%;
+				height: 100%;
+				background: #ffffff63;
+
+				span {
+					color: #fff;
+					padding: 5px 15px;
+					border: 1px solid #fff;
+					cursor: pointer;
+					font-size: 13px;
+					background-color: #115b8087;
+				}
+			}
+			
+			&:hover {
+				.content-image-layout{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+
+		i.image-caption {
+			display: block;
+			font-size: 0.8em;
+			color: #666;
+
+			&.caption-align-left {
+				text-align: left;
+			}
+
+			&.caption-align-right {
+				text-align: right;
+			}
+
+			&.caption-align-center {
+				text-align: center;
+			}
+		}
+	}
+	.content-image-text{
+		padding: 5px;
+		box-sizing: border-box;
+	}
+
+	.components-placeholder__error {
+		color: #dc3232;
+	}
+}
+.cwc-content-image-position{
+	.components-radio-control__group-wrapper{
+		flex-direction: initial;
+		justify-content: initial;
+	}
+}

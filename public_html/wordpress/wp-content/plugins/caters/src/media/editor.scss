@@ -1,0 +1,55 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+.cwc-block-youtube-media {
+    .youtube-media-container{
+        width: "100%";
+        position: "relative";
+        padding-top: "56.25%";
+        
+        img{
+            width: "100%";
+            position: "absolute";
+            top: 0;
+            left: 0;
+            height: "100%";
+            object-fit: "cover";
+        }
+    }
+    .wp-block-youtube-media__input {
+        flex: 1 1 auto;
+
+        input.components-input-control__input {
+            width: 100%;
+            height: 40px !important;
+        }
+    }
+
+    .wp-block-youtube-media__button {
+        height: 40px;
+    }
+
+    .components-placeholder__error {
+        color: #dc3232;
+    }
+
+    .youtube-media-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+
+        img,
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.cwc-block-image-content{
+	padding: 5px;
+	display: flex;
+	box-sizing: border-box;
+
+	.image-content-col{
+		width: 50%;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		padding: 2px;
+		border: 1px solid #f6f6f6;
+		border-right: 0;
+
+		&:first-child{
+			padding-right: 5px;
+		}
+
+		&:last-child{
+			padding-left: 5px;
+			border-right: 1px solid #f6f6f6;
+		}
+		.block-editor-media-placeholder,
+		.image-content-image-show{
+			margin-bottom: 10px;
+			flex-grow: 1;
+		}
+		.image-content-image-show{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-bottom: 2px;
+			border-bottom: 1px solid #f6f6f6;
+
+			.content-image-layout {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: none;
+				width: 100%;
+				height: 100%;
+				background: #ffffff63;
+		
+				span {
+					box-sizing: border-box;
+					color: #fff;
+					padding: 5px 15px;
+					border: 1px solid #fff;
+					cursor: pointer;
+					font-size: 13px;
+					background-color: #115b8087;
+				}
+			}
+		
+			&:hover {
+				.content-image-layout {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+			img{
+				max-width: 100%;
+			}
+		}
+		i.image-caption {
+			display: block;
+			font-size: 0.8em;
+			color: #666;
+
+			&.caption-align-left {
+				text-align: left;
+			}
+
+			&.caption-align-right {
+				text-align: right;
+			}
+
+			&.caption-align-center {
+				text-align: center;
+			}
+		}
+
+		.block-editor-rich-text__editable{
+			padding: 5px;
+			box-sizing: border-box;
+		}
+	}
+	.components-placeholder__error {
+		color: #dc3232;
+	}
+}

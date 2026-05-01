@@ -1,0 +1,1916 @@
+# Copyright (C) 2025 Lazy Blocks Team
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Lazy Blocks Pro 4.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/nk-o/lazyblocks/issues\n"
+"Last-Translator: Lazy Blocks Team\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-08-18T17:08:27+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: lazy-blocks\n"
+
+#. Plugin Name of the plugin
+#: lazy-blocks-pro.php
+#: core-plugin/assets/components/pro-notice/index.js:23
+msgid "Lazy Blocks Pro"
+msgstr ""
+
+#. Description of the plugin
+#: lazy-blocks-pro.php
+msgid "Easily create custom blocks and custom meta fields for Gutenberg without hard coding."
+msgstr ""
+
+#. Author of the plugin
+#: lazy-blocks-pro.php
+msgid "Lazy Blocks Team"
+msgstr ""
+
+#. Author URI of the plugin
+#: lazy-blocks-pro.php
+msgid "https://lazyblocks.com/?utm_source=plugin_pro&utm_medium=readme&utm_campaign=byline"
+msgstr ""
+
+#: classes/class-control-divider.php:33
+msgid "Divider"
+msgstr ""
+
+#: classes/class-control-message.php:33
+#: assets/control-message/script.js:70
+msgid "Message"
+msgstr ""
+
+#: classes/class-control-panel.php:33
+msgid "Panel"
+msgstr ""
+
+#: classes/class-control-posts.php:33
+msgid "Posts"
+msgstr ""
+
+#: classes/class-control-posts.php:243
+msgid "(no title)"
+msgstr ""
+
+#: classes/class-control-taxonomy.php:33
+#: assets/control-taxonomy/script.js:279
+msgid "Taxonomy"
+msgstr ""
+
+#: classes/class-control-units.php:33
+#: assets/control-units/script.js:84
+msgid "Units"
+msgstr ""
+
+#: classes/class-control-users.php:33
+msgid "Users"
+msgstr ""
+
+#: classes/class-rest.php:65
+msgid "Sorry, you are not allowed to update block collections."
+msgstr ""
+
+#: classes/class-rest.php:82
+msgid "Block data updated successfully."
+msgstr ""
+
+#: classes/class-updater-api.php:115
+msgid "Invalid package URL provided."
+msgstr ""
+
+#: classes/class-updater-api.php:170
+msgid "Failed to refresh expired download URL"
+msgstr ""
+
+#: classes/class-updater-api.php:180
+msgid "Fresh download URL is empty."
+msgstr ""
+
+#: classes/class-updater-api.php:185
+msgid "Fresh download URL is not valid."
+msgstr ""
+
+#: classes/class-updater-api.php:197
+msgid "Downloaded file is not accessible."
+msgstr ""
+
+#. translators: %2$s - purchase page.
+#: classes/class-updater-api.php:214
+#, php-format
+msgid "To enable updates, please enter your license key on the <a href=\"%1$s\">Updates</a> page. If you don't have a license key, please see <a href=\"%2$s\" target=\"_blank\">details & pricing</a>."
+msgstr ""
+
+#: classes/class-updater-api.php:318
+msgid "An error occurred, please try again."
+msgstr ""
+
+#: classes/class-updater-api.php:357
+#: classes/class-updater-api.php:403
+msgid "License key was not specified."
+msgstr ""
+
+#: classes/class-updater-api.php:369
+#: classes/class-updater-api.php:416
+#: classes/class-updater.php:256
+#: classes/class-updater.php:269
+msgid "Something went wrong."
+msgstr ""
+
+#: classes/class-updater-api.php:471
+msgid "Unknown error occurred during update check."
+msgstr ""
+
+#: classes/class-updater.php:62
+#: classes/class-updater.php:63
+#: classes/class-updater.php:100
+msgid "Updates"
+msgstr ""
+
+#: classes/class-updater.php:109
+msgid "License Key"
+msgstr ""
+
+#. translators: %s - troubleshooting page.
+#: classes/class-updater.php:119
+#, php-format
+msgid "Your license is active. If you can't get updates, please see <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">troubleshooting page</a>."
+msgstr ""
+
+#. translators: %s - purchase page.
+#: classes/class-updater.php:127
+#, php-format
+msgid "To unlock updates, please enter your license key. If you don't have a license key, please see <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">details & pricing</a>."
+msgstr ""
+
+#: classes/class-updater.php:139
+msgid "Deactivate License"
+msgstr ""
+
+#: classes/class-updater.php:143
+msgid "Activate License"
+msgstr ""
+
+#: classes/class-updater.php:291
+msgid "Your license is deactivated."
+msgstr ""
+
+#: classes/class-updater.php:301
+msgid "Your license is activated!"
+msgstr ""
+
+#: core-plugin/classes/class-admin.php:43
+#: core-plugin/classes/class-admin.php:44
+msgid "Documentation"
+msgstr ""
+
+#: core-plugin/classes/class-admin.php:59
+#: core-plugin/classes/class-admin.php:81
+msgid "Go Pro"
+msgstr ""
+
+#: core-plugin/classes/class-admin.php:252
+#: core-plugin/classes/class-blocks.php:187
+#: core-plugin/classes/class-blocks.php:1222
+msgid "Lazy Blocks"
+msgstr ""
+
+#: core-plugin/classes/class-admin.php:286
+#: assets/_components/component-conditions.js:801
+msgid "and"
+msgstr ""
+
+#: core-plugin/classes/class-blocks.php:109
+#: core-plugin/classes/class-blocks.php:127
+msgid "Inactive"
+msgstr ""
+
+#: core-plugin/classes/class-blocks.php:136
+msgid "Active"
+msgstr ""
+
+#: core-plugin/classes/class-blocks.php:188
+#: core-plugin/classes/class-blocks.php:189
+msgid "Blocks"
+msgstr ""
+
+#: core-plugin/classes/class-blocks.php:190
+#: core-plugin/assets/components/document-tabs/index.js:62
+#: core-plugin/assets/components/document-tabs/index.js:64
+msgid "Block"
+msgstr ""
+
+#: core-plugin/classes/class-blocks.php:191
+msgid "Add Block"
+msgstr ""
+
+#. translators: %1$ - post title.
+#: core-plugin/classes/class-blocks.php:360
+#, php-format
+msgid "Duplicate “%1$s”"
+msgstr ""
+
+#: core-plugin/classes/class-blocks.php:363
+#: core-plugin/assets/block-builder/boxes/controls/control.js:211
+msgid "Duplicate"
+msgstr ""
+
+#. translators: %1$ - post title.
+#: core-plugin/classes/class-blocks.php:374
+#, php-format
+msgid "Export “%1$s”"
+msgstr ""
+
+#: core-plugin/classes/class-blocks.php:377
+#: core-plugin/classes/class-blocks.php:412
+msgid "Export"
+msgstr ""
+
+#. translators: %1$ - post title.
+#: core-plugin/classes/class-blocks.php:389
+#, php-format
+msgid "Deactivate “%1$s”"
+msgstr ""
+
+#. translators: %1$ - post title.
+#: core-plugin/classes/class-blocks.php:389
+#, php-format
+msgid "Activate “%1$s”"
+msgstr ""
+
+#: core-plugin/classes/class-blocks.php:393
+#: core-plugin/classes/class-blocks.php:416
+msgid "Deactivate"
+msgstr ""
+
+#: core-plugin/classes/class-blocks.php:393
+#: core-plugin/classes/class-blocks.php:414
+msgid "Activate"
+msgstr ""
+
+#: core-plugin/classes/class-blocks.php:456
+#: assets/control-panel/script.js:168
+#: core-plugin/assets/block-builder/boxes/general/index.js:179
+msgid "Icon"
+msgstr ""
+
+#: core-plugin/classes/class-blocks.php:458
+#: assets/blocks-custom-slug-namespace/script.js:59
+#: core-plugin/assets/block-builder/boxes/general/index.js:46
+msgid "Slug"
+msgstr ""
+
+#: core-plugin/classes/class-blocks.php:459
+#: core-plugin/assets/block-builder/boxes/general/index.js:94
+msgid "Category"
+msgstr ""
+
+#: core-plugin/classes/class-blocks.php:460
+#: core-plugin/assets/block-builder/boxes/general/index.js:213
+#: core-plugin/assets/block-builder/boxes/wizard/index.js:276
+msgid "Description"
+msgstr ""
+
+#: core-plugin/classes/class-controls.php:41
+#: core-plugin/assets/block-builder/boxes/wizard/templates.js:13
+msgid "Basic"
+msgstr ""
+
+#: core-plugin/classes/class-controls.php:42
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/placement.js:73
+msgid "Content"
+msgstr ""
+
+#: core-plugin/classes/class-controls.php:43
+msgid "Choice"
+msgstr ""
+
+#: core-plugin/classes/class-controls.php:44
+msgid "Advanced"
+msgstr ""
+
+#: core-plugin/classes/class-controls.php:45
+#: core-plugin/assets/block-builder/boxes/supports/index.js:325
+msgid "Layout"
+msgstr ""
+
+#: core-plugin/classes/class-controls.php:46
+msgid "Deprecated"
+msgstr ""
+
+#: core-plugin/classes/class-deactivate-duplicate-plugin.php:69
+msgid "Lazy Blocks and Lazy Blocks Pro should not be active at the same time. We've automatically deactivated Lazy Blocks."
+msgstr ""
+
+#: core-plugin/classes/class-deactivate-duplicate-plugin.php:71
+msgid "Lazy Blocks and Lazy Blocks Pro should not be active at the same time. We've automatically deactivated Lazy Blocks Pro."
+msgstr ""
+
+#. translators: 1: WordPress hook name, 2: Version number, 3: Alternative hook name.
+#: core-plugin/classes/class-deprecated.php:131
+#, php-format
+msgid "Hook %1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
+msgstr ""
+
+#: core-plugin/classes/class-dummy.php:54
+msgid "Example Block"
+msgstr ""
+
+#: core-plugin/classes/class-dummy.php:132
+msgid "Example block that helps you to get started with Lazy Blocks plugin"
+msgstr ""
+
+#: core-plugin/classes/class-rest.php:119
+msgid "Sorry, you are not allowed to read Gutenberg blocks of this post."
+msgstr ""
+
+#: core-plugin/classes/class-rest.php:122
+msgid "Sorry, you are not allowed to read Gutenberg blocks as this user."
+msgstr ""
+
+#: core-plugin/classes/class-rest.php:144
+msgid "Sorry, you are not allowed to read Gutenberg blocks data."
+msgstr ""
+
+#: core-plugin/classes/class-rest.php:147
+#: core-plugin/classes/class-rest.php:171
+msgid "Sorry, you are not allowed to read Gutenberg blocks data as this user."
+msgstr ""
+
+#: core-plugin/classes/class-rest.php:227
+msgid "Invalid block."
+msgstr ""
+
+#: core-plugin/classes/class-rest.php:235
+#: core-plugin/classes/class-rest.php:370
+msgid "Render callback is not specified."
+msgstr ""
+
+#: core-plugin/classes/class-templates.php:168
+msgid "Templates"
+msgstr ""
+
+#: core-plugin/classes/class-templates.php:169
+msgid "Template"
+msgstr ""
+
+#: core-plugin/classes/class-templates.php:311
+#: core-plugin/assets/admin/templates/index.js:178
+msgid "Post Types"
+msgstr ""
+
+#: core-plugin/classes/class-templates.php:312
+#: core-plugin/assets/admin/templates/index.js:193
+msgid "Template Lock"
+msgstr ""
+
+#: core-plugin/classes/class-templates.php:343
+msgid "All"
+msgstr ""
+
+#: core-plugin/classes/class-templates.php:345
+msgid "Insert"
+msgstr ""
+
+#: core-plugin/classes/class-tools.php:51
+#: core-plugin/classes/class-tools.php:52
+#: core-plugin/classes/class-tools.php:67
+msgid "Export / Import"
+msgstr ""
+
+#. translators: %s - block title.
+#: core-plugin/classes/class-tools.php:330
+#, php-format
+msgid "Block \"%s\" activated successfully."
+msgstr ""
+
+#. translators: %s - block title.
+#: core-plugin/classes/class-tools.php:330
+#, php-format
+msgid "Block \"%s\" deactivated successfully."
+msgstr ""
+
+#. translators: %s - number of blocks.
+#: core-plugin/classes/class-tools.php:333
+#, php-format
+msgid "Activated %s block"
+msgid_plural "Activated %s blocks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s - number of blocks.
+#: core-plugin/classes/class-tools.php:333
+#, php-format
+msgid "Deactivated %s block"
+msgid_plural "Deactivated %s blocks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core-plugin/classes/class-tools.php:372
+msgid "No file selected"
+msgstr ""
+
+#: core-plugin/classes/class-tools.php:382
+msgid "Error uploading file. Please try again"
+msgstr ""
+
+#: core-plugin/classes/class-tools.php:388
+msgid "Incorrect file type"
+msgstr ""
+
+#: core-plugin/classes/class-tools.php:399
+msgid "Import file empty"
+msgstr ""
+
+#. translators: %s - number of blocks.
+#: core-plugin/classes/class-tools.php:438
+#, php-format
+msgid "Imported %s block"
+msgid_plural "Imported %s blocks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s - number of templates.
+#: core-plugin/classes/class-tools.php:458
+#, php-format
+msgid "Imported %s template"
+msgid_plural "Imported %s templates"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s - post type.
+#: core-plugin/classes/class-tools.php:634
+#, php-format
+msgid "Template for these post types '%s' already exists."
+msgstr ""
+
+#. translators: %s - post title.
+#: core-plugin/classes/class-tools.php:680
+#, php-format
+msgid "Added new block '%s'."
+msgstr ""
+
+#: core-plugin/classes/class-tools.php:711
+msgid "(Copy)"
+msgstr ""
+
+#: core-plugin/controls/checkbox/index.php:23
+#: assets/control-taxonomy/script.js:330
+msgid "Checkbox"
+msgstr ""
+
+#: core-plugin/controls/classic_editor/index.php:23
+msgid "Classic Editor (WYSIWYG)"
+msgstr ""
+
+#: core-plugin/controls/code_editor/index.php:23
+#: core-plugin/assets/block-builder/boxes/code/component-react-ace/index.js:165
+msgid "Code Editor"
+msgstr ""
+
+#: core-plugin/controls/color/index.php:30
+msgid "Color Picker"
+msgstr ""
+
+#: core-plugin/controls/date_time/index.php:23
+msgid "Date Time Picker"
+msgstr ""
+
+#: core-plugin/controls/email/index.php:23
+msgid "Email"
+msgstr ""
+
+#: core-plugin/controls/file/index.php:23
+msgid "File"
+msgstr ""
+
+#: core-plugin/controls/gallery/index.php:23
+msgid "Gallery"
+msgstr ""
+
+#: core-plugin/controls/image/index.php:23
+msgid "Image"
+msgstr ""
+
+#: core-plugin/controls/inner_blocks/index.php:23
+msgid "Inner Blocks"
+msgstr ""
+
+#: core-plugin/controls/number/index.php:23
+msgid "Number"
+msgstr ""
+
+#: core-plugin/controls/password/index.php:23
+msgid "Password"
+msgstr ""
+
+#: core-plugin/controls/radio/index.php:23
+#: assets/control-taxonomy/script.js:331
+msgid "Radio"
+msgstr ""
+
+#: core-plugin/controls/range/index.php:23
+msgid "Range"
+msgstr ""
+
+#: core-plugin/controls/repeater/index.php:23
+msgid "Repeater"
+msgstr ""
+
+#: core-plugin/controls/rich_text/index.php:23
+msgid "Rich Text (WYSIWYG)"
+msgstr ""
+
+#: core-plugin/controls/select/index.php:23
+#: assets/control-taxonomy/script.js:324
+msgid "Select"
+msgstr ""
+
+#: core-plugin/controls/text/index.php:23
+msgid "Text"
+msgstr ""
+
+#: core-plugin/controls/textarea/index.php:23
+msgid "Text Area"
+msgstr ""
+
+#: core-plugin/controls/toggle/index.php:23
+msgid "Toggle"
+msgstr ""
+
+#: core-plugin/controls/undefined/index.php:23
+msgid "Undefined"
+msgstr ""
+
+#: core-plugin/controls/url/index.php:23
+msgid "URL"
+msgstr ""
+
+#. translators: %1$s - template file path.
+#: core-plugin/templates/template-not-found.php:19
+#, php-format
+msgid "Template file <code>%1$s</code> not found."
+msgstr ""
+
+#: assets/blocks-custom-slug-namespace/namespace-selector.js:52
+msgid "Custom"
+msgstr ""
+
+#: assets/blocks-custom-slug-namespace/namespace-selector.js:115
+msgid "Edit"
+msgstr ""
+
+#: assets/blocks-custom-slug-namespace/namespace-selector.js:152
+msgid "Enter namespace"
+msgstr ""
+
+#: assets/blocks-custom-slug-namespace/namespace-selector.js:173
+msgid "Save for reuse"
+msgstr ""
+
+#: assets/blocks-custom-slug-namespace/namespace-selector.js:181
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/label.js:44
+#: core-plugin/assets/block-builder/boxes/style-variations/index.js:35
+#: core-plugin/controls/checkbox/script.js:217
+#: core-plugin/controls/radio/script.js:111
+#: core-plugin/controls/select/component-choices.js:157
+#: core-plugin/controls/select/script.js:159
+msgid "Label"
+msgstr ""
+
+#: assets/blocks-custom-slug-namespace/namespace-selector.js:188
+msgid "Namespace"
+msgstr ""
+
+#: assets/blocks-custom-slug-namespace/namespace-selector.js:205
+msgid "Register collection"
+msgstr ""
+
+#: assets/blocks-custom-slug-namespace/namespace-selector.js:239
+#: core-plugin/controls/classic_editor/tmce.js:97
+msgid "Save"
+msgstr ""
+
+#: assets/blocks-custom-slug-namespace/namespace-selector.js:248
+#: core-plugin/assets/editor/plugins/remove-block-with-saved-post-meta/index.js:179
+#: core-plugin/controls/classic_editor/tmce.js:84
+msgid "Cancel"
+msgstr ""
+
+#: assets/blocks-custom-slug-namespace/namespace-selector.js:258
+msgid "Delete"
+msgstr ""
+
+#. translators: %s: collection label or namespace
+#: assets/blocks-custom-slug-namespace/namespace-selector.js:362
+#, js-format
+msgid "Are you sure you want to delete collection \"%s\"?"
+msgstr ""
+
+#: assets/blocks-custom-slug-namespace/script.js:87
+msgid "Collections & namespaces"
+msgstr ""
+
+#: assets/conditional-logic/script.js:252
+msgid "Conditional Logic"
+msgstr ""
+
+#: assets/control-message/script.js:78
+msgid "New Lines"
+msgstr ""
+
+#: assets/control-message/script.js:79
+msgid "Controls how new lines are rendered"
+msgstr ""
+
+#: assets/control-message/script.js:83
+msgid "Automatically add paragraphs"
+msgstr ""
+
+#: assets/control-message/script.js:90
+msgid "Automatically add <br>"
+msgstr ""
+
+#: assets/control-message/script.js:94
+msgid "No formatting"
+msgstr ""
+
+#: assets/control-panel/script.js:131
+msgid "Endpoint"
+msgstr ""
+
+#: assets/control-panel/script.js:132
+msgid "Define an endpoint for the previous panel to stop. This panel will not be visible."
+msgstr ""
+
+#: assets/control-panel/script.js:140
+#: assets/control-panel/script.js:157
+#: assets/control-posts/script.js:518
+#: assets/control-taxonomy/script.js:386
+#: assets/control-users/script.js:383
+#: assets/extend-control-url/script.js:174
+#: assets/extend-control-url/script.js:197
+#: core-plugin/assets/block-builder/boxes/code/index.js:423
+#: core-plugin/assets/block-builder/boxes/code/index.js:444
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/hide-if-not-selected.js:19
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/required.js:19
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/save-in-meta.js:39
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/translate.js:19
+#: core-plugin/controls/checkbox/script.js:182
+#: core-plugin/controls/color/script.js:93
+#: core-plugin/controls/color/script.js:111
+#: core-plugin/controls/image/script.js:125
+#: core-plugin/controls/radio/script.js:84
+#: core-plugin/controls/repeater/script.js:340
+#: core-plugin/controls/select/script.js:110
+#: core-plugin/controls/select/script.js:132
+#: core-plugin/controls/toggle/script.js:60
+msgid "Yes"
+msgstr ""
+
+#: assets/control-panel/script.js:152
+msgid "Initial Open"
+msgstr ""
+
+#: assets/control-posts/script.js:227
+#: assets/control-taxonomy/script.js:198
+#: assets/control-users/script.js:216
+msgid "Type to search…"
+msgstr ""
+
+#: assets/control-posts/script.js:364
+msgid "Filter by Post Type"
+msgstr ""
+
+#: assets/control-posts/script.js:370
+msgid "All post types"
+msgstr ""
+
+#: assets/control-posts/script.js:403
+msgid "Filter by Post Status"
+msgstr ""
+
+#: assets/control-posts/script.js:409
+msgid "All post statuses"
+msgstr ""
+
+#: assets/control-posts/script.js:442
+msgid "Filter by Taxonomy"
+msgstr ""
+
+#: assets/control-posts/script.js:448
+msgid "All taxonomies"
+msgstr ""
+
+#: assets/control-posts/script.js:481
+#: assets/control-taxonomy/script.js:345
+#: assets/control-users/script.js:346
+#: core-plugin/controls/checkbox/script.js:204
+#: core-plugin/controls/color/script.js:125
+#: core-plugin/controls/radio/script.js:98
+#: core-plugin/controls/select/script.js:146
+msgid "Output Format"
+msgstr ""
+
+#: assets/control-posts/script.js:482
+#: assets/control-taxonomy/script.js:346
+#: assets/control-users/script.js:347
+#: core-plugin/controls/checkbox/script.js:205
+#: core-plugin/controls/color/script.js:126
+#: core-plugin/controls/radio/script.js:99
+#: core-plugin/controls/select/script.js:147
+msgid "Allows you to change attribute output format"
+msgstr ""
+
+#: assets/control-posts/script.js:491
+msgid "Post ID"
+msgstr ""
+
+#: assets/control-posts/script.js:495
+msgid "Post Object"
+msgstr ""
+
+#: assets/control-posts/script.js:509
+#: assets/control-taxonomy/script.js:377
+#: assets/control-users/script.js:374
+#: core-plugin/assets/block-builder/boxes/supports/index.js:428
+#: core-plugin/controls/checkbox/script.js:174
+#: core-plugin/controls/select/script.js:124
+msgid "Multiple"
+msgstr ""
+
+#: assets/control-posts/script.js:510
+#: assets/control-taxonomy/script.js:378
+#: assets/control-users/script.js:375
+#: core-plugin/controls/checkbox/script.js:175
+#: core-plugin/controls/select/script.js:125
+msgid "Allows you to select multiple values"
+msgstr ""
+
+#: assets/control-taxonomy/script.js:280
+msgid "Select the taxonomy to be displayed"
+msgstr ""
+
+#: assets/control-taxonomy/script.js:288
+msgid "Select Taxonomy"
+msgstr ""
+
+#: assets/control-taxonomy/script.js:314
+msgid "Appearance"
+msgstr ""
+
+#: assets/control-taxonomy/script.js:315
+msgid "Select the appearance of this field"
+msgstr ""
+
+#: assets/control-taxonomy/script.js:355
+msgid "Term Slug"
+msgstr ""
+
+#: assets/control-taxonomy/script.js:359
+msgid "Term ID"
+msgstr ""
+
+#: assets/control-taxonomy/script.js:363
+msgid "Term Object"
+msgstr ""
+
+#: assets/control-units/script.js:85
+msgid "Collection of available units to display in control."
+msgstr ""
+
+#: assets/control-units/script.js:95
+msgid "Type unit and push Enter"
+msgstr ""
+
+#: assets/control-users/script.js:307
+msgid "Filter by Role"
+msgstr ""
+
+#: assets/control-users/script.js:313
+msgid "All user roles"
+msgstr ""
+
+#: assets/control-users/script.js:356
+msgid "User ID"
+msgstr ""
+
+#: assets/control-users/script.js:360
+msgid "User Object"
+msgstr ""
+
+#: assets/extend-control-code-editor/script.js:123
+msgid "Language"
+msgstr ""
+
+#: assets/extend-control-code-editor/script.js:124
+msgid "Select the language for syntax highlighting."
+msgstr ""
+
+#: assets/extend-control-url/script.js:137
+msgid "Display suggestions when typing the URL"
+msgstr ""
+
+#: assets/extend-control-url/script.js:143
+msgid "Link Suggestions"
+msgstr ""
+
+#: assets/extend-control-url/script.js:166
+msgid "Show Initial Suggestions"
+msgstr ""
+
+#: assets/extend-control-url/script.js:167
+msgid "Whether to present initial suggestions immediately"
+msgstr ""
+
+#: assets/extend-control-url/script.js:189
+msgid "Rich Preview"
+msgstr ""
+
+#: assets/extend-control-url/script.js:190
+msgid "Display rich link preview with site title and image"
+msgstr ""
+
+#: assets/relationships/script.js:67
+msgid "Provide Context to Blocks"
+msgstr ""
+
+#: assets/relationships/script.js:74
+#: assets/relationships/script.js:139
+#: assets/relationships/script.js:181
+msgid "Select or enter block slug"
+msgstr ""
+
+#: assets/relationships/script.js:114
+msgid "Context custom slug (optional)"
+msgstr ""
+
+#: assets/relationships/script.js:132
+msgid "Ancestor"
+msgstr ""
+
+#: assets/relationships/script.js:174
+msgid "Allowed Blocks"
+msgstr ""
+
+#: assets/relationships/script.js:234
+msgid "Relationships"
+msgstr ""
+
+#: assets/_components/component-conditions.js:40
+msgid "Has any value"
+msgstr ""
+
+#: assets/_components/component-conditions.js:44
+msgid "Has no value"
+msgstr ""
+
+#: assets/_components/component-conditions.js:52
+msgid "Is equal to"
+msgstr ""
+
+#: assets/_components/component-conditions.js:56
+msgid "Is not equal to"
+msgstr ""
+
+#: assets/_components/component-conditions.js:66
+msgid "Has class"
+msgstr ""
+
+#: assets/_components/component-conditions.js:72
+msgid "Has no class"
+msgstr ""
+
+#: assets/_components/component-conditions.js:80
+msgid "Contains"
+msgstr ""
+
+#: assets/_components/component-conditions.js:88
+msgid "Is greater than"
+msgstr ""
+
+#: assets/_components/component-conditions.js:92
+msgid "Is less than"
+msgstr ""
+
+#: assets/_components/component-conditions.js:160
+#: core-plugin/controls/select/script.js:33
+msgid "-- Select --"
+msgstr ""
+
+#: assets/_components/component-conditions.js:161
+msgid "Controls"
+msgstr ""
+
+#: assets/_components/component-conditions.js:173
+msgid "No controls found"
+msgstr ""
+
+#: assets/_components/component-conditions.js:177
+msgid "Other"
+msgstr ""
+
+#: assets/_components/component-conditions.js:179
+msgid "CSS Class Name"
+msgstr ""
+
+#: assets/_components/component-conditions.js:185
+msgid "Block Styles"
+msgstr ""
+
+#: assets/_components/component-conditions.js:218
+#: core-plugin/controls/checkbox/script.js:213
+#: core-plugin/controls/radio/script.js:107
+#: core-plugin/controls/select/component-choices.js:161
+#: core-plugin/controls/select/script.js:155
+msgid "Value"
+msgstr ""
+
+#: assets/_components/component-conditions.js:636
+#: assets/_components/component-conditions.js:676
+msgid "-- Nothing to select --"
+msgstr ""
+
+#: assets/_components/component-conditions.js:668
+msgid "Has style"
+msgstr ""
+
+#: assets/_components/component-conditions.js:669
+msgid "Has no style"
+msgstr ""
+
+#: assets/_components/component-conditions.js:804
+msgid "or"
+msgstr ""
+
+#: assets/_components/component-conditions.js:817
+msgid "Add Rule Group"
+msgstr ""
+
+#: core-plugin/assets/admin/templates/index.js:105
+msgid "None"
+msgstr ""
+
+#: core-plugin/assets/admin/templates/index.js:109
+msgid "All - prevents all operations"
+msgstr ""
+
+#: core-plugin/assets/admin/templates/index.js:113
+msgid "Insert - prevents inserting new blocks, but allows moving existing ones"
+msgstr ""
+
+#: core-plugin/assets/admin/templates/index.js:120
+msgid "Content Only - prevents all operations, except the content editing."
+msgstr ""
+
+#: core-plugin/assets/admin/templates/index.js:172
+msgid "Template Settings"
+msgstr ""
+
+#: core-plugin/assets/admin/tools/tools.js:117
+msgid "Select all"
+msgstr ""
+
+#: core-plugin/assets/admin/tools/tools.js:245
+msgid "Copy to Clipboard"
+msgstr ""
+
+#: core-plugin/assets/admin/tools/tools.js:261
+msgid "Export JSON"
+msgstr ""
+
+#: core-plugin/assets/admin/tools/tools.js:275
+msgid "Generate PHP"
+msgstr ""
+
+#: core-plugin/assets/admin/tools/tools.js:291
+msgid "Export Blocks"
+msgstr ""
+
+#: core-plugin/assets/admin/tools/tools.js:316
+msgid "Export Templates"
+msgstr ""
+
+#: core-plugin/assets/admin/tools/tools.js:334
+#: core-plugin/assets/admin/tools/tools.js:363
+msgid "Import"
+msgstr ""
+
+#: core-plugin/assets/block-builder/block/edit.js:80
+msgid "Style Variations"
+msgstr ""
+
+#: core-plugin/assets/block-builder/block/edit.js:86
+msgid "Supports"
+msgstr ""
+
+#: core-plugin/assets/block-builder/block/edit.js:92
+msgid "Supports Ghost Kit"
+msgstr ""
+
+#: core-plugin/assets/block-builder/block/edit.js:98
+msgid "Condition"
+msgstr ""
+
+#: core-plugin/assets/block-builder/block/index.js:18
+msgid "Block Builder"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code-preview/index.js:131
+#: core-plugin/assets/components/preview-error-boundary/index.js:23
+msgid "Error: Could not generate the preview."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code-preview/index.js:195
+msgid "Preview"
+msgstr ""
+
+#. translators: %1$s - control name.
+#: core-plugin/assets/block-builder/boxes/code/component-react-ace/index.js:62
+#, js-format
+msgid "Control \"%1$s\""
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/component-react-ace/index.js:118
+msgid "Block Class"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:298
+msgid "HTML + Handlebars"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:302
+msgid "PHP"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:306
+msgid "Theme Template"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:317
+msgid "CSS"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:318
+msgid "JS"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:323
+msgid "Select output method"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:415
+msgid "Unified Block Code"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:436
+msgid "With Editor Style"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:460
+msgid "Code Output in Editor"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:467
+msgid "Always Visible"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:474
+msgid "Visible only when Selected"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:481
+msgid "Visible only when Not Selected"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:488
+#: core-plugin/assets/block-builder/boxes/controls/index.js:272
+msgid "Hidden"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:546
+msgid "Lazy Blocks will search for a template file in your theme directory. Read more:"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:555
+msgid "How to use theme template"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:566
+msgid "Simple text field example see here:"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:580
+msgid "Note 1: if you use blocks as Metaboxes, you may leave this code editor blank."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/code/index.js:586
+msgid "Note 2: supported custom PHP callback to output block"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/condition/index.js:67
+msgid "Show in posts"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/condition/index.js:73
+msgid "In all posts by default"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/condition/index.js:104
+msgid "Loading…"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/controls/control.js:195
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/label.js:52
+msgid "(no label)"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/controls/control.js:216
+msgid "(copy)"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/controls/control.js:250
+msgid "Remove"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/controls/control.js:256
+msgid "Do you really want to remove control?"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/controls/control.js:292
+#: core-plugin/assets/components/copied/index.js:14
+msgid "Copied!"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/controls/control.js:293
+msgid "Copy Name"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/controls/index.js:164
+msgid "Add Child Control"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/controls/index.js:165
+msgid "Add Control"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/controls/index.js:221
+msgid "Content Controls"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/controls/index.js:252
+msgid "Inspector Controls"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/general/index.js:56
+msgid "Block slug must include only lowercase alphanumeric characters or dashes, and start with a letter. Example: lazyblock/my-custom-block"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/general/index.js:100
+msgid "Select category"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/general/index.js:115
+msgid "Keywords"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/general/index.js:116
+msgid "Make it easier to discover a block with keyword aliases"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/general/index.js:126
+msgid "Type keyword and push Enter"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/index.js:44
+msgid "Select control to see settings."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/default.js:25
+msgid "Default value"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/default.js:26
+msgid "Appears when inserting a new block"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/group.js:14
+msgid "Group"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/help.js:13
+msgid "Help text"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/help.js:14
+msgid "Instructions under control"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/hide-if-not-selected.js:14
+msgid "Hide if block is not selected"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/label.js:45
+msgid "This is the name which will appear on the block edit control"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/name.js:30
+#: core-plugin/assets/block-builder/boxes/style-variations/index.js:31
+msgid "Name"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/name.js:42
+msgid "Control name must include only alphanumeric characters, dashes or underscores. Example: my-control-name"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/placement.js:45
+msgid "Placement"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/placement.js:98
+msgid "Inspector"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/required.js:14
+msgid "Required"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/save-in-meta.js:22
+msgid "Save in Meta"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/save-in-meta.js:33
+msgid "How to use?"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/save-in-meta.js:49
+msgid "Meta custom name (optional)"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/save-in-meta.js:55
+msgid "Unique metabox name"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/translate.js:14
+msgid "WPML Translation"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/type.js:175
+msgid "Type"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/type.js:224
+#: core-plugin/assets/components/icon-picker/index.js:89
+msgid "Type to Search…"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/width.js:16
+msgid "25%"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/width.js:17
+msgid "50%"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/width.js:18
+msgid "75%"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/width.js:19
+msgid "100%"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/selected-control-settings/settings-rows/width.js:27
+msgid "Width"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/style-variations/index.js:18
+msgid "+ Add Style Variation"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/style-variations/index.js:21
+msgid "Add the style variation name, which will be used as a class name on your block. For example, if you add a style variation with the name `outline`, when a user selects this style, the class name `is-style-outline` will be added to the block."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:52
+msgid "To see these settings in your block, you have to install Ghost Kit plugin."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:64
+#: core-plugin/controls/inner_blocks/script.js:75
+msgid "Read More"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:85
+msgid "\"Class Name\" support is required to use the following settings."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:95
+msgid "Effects"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:96
+msgid "Add visual effects, reveal, scroll animations, etc."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:109
+msgid "Position"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:110
+msgid "Change block position to either absolute or fixed."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:124
+msgid "Spacings"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:125
+msgid "Change block margins and paddings."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:136
+msgid "Frame"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:137
+msgid "Add border and box shadow to block."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:148
+msgid "Transform"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:149
+msgid "Add CSS transformations to block."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:160
+msgid "Custom CSS"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:161
+msgid "Write custom CSS on each inserted blocks."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:175
+msgid "Display"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:176
+msgid "Display / Hide blocks on different screen sizes."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:190
+msgid "Attributes"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports-ghost-kit/index.js:191
+msgid "Insert custom HTML attributes with custom content."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:130
+#: core-plugin/controls/color/script.js:134
+msgid "Color"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:131
+msgid "Additional fields to manage colors in the block."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:159
+msgid "Select color options"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:177
+msgid "Typography"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:178
+msgid "Additional fields to manage block typography."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:206
+msgid "Select typography options"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:224
+msgid "Spacing"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:225
+msgid "Additional fields to manage block spacings."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:252
+msgid "Select spacing options"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:270
+msgid "Dimensions"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:271
+msgid "Additional fields to manage block dimensions."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:298
+msgid "Select dimensions options"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:316
+msgid "Shadow"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:317
+msgid "Additional fields to manage block shadow."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:326
+msgid "Additional fields to manage block layout."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:357
+msgid "Select layout options"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:376
+msgid "Align"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:381
+msgid "Select align options"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:408
+msgid "Anchor"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:409
+msgid "Additional field to add block ID attribute."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:418
+msgid "Class Name"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:419
+msgid "Additional field to add custom class name."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:429
+msgid "Allow use block multiple times on the page."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:438
+msgid "Inserter"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:439
+msgid "Show block in blocks inserter."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:445
+msgid "Reusable"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:446
+msgid "Allow converting block into reusable block."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:455
+msgid "Lock"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/supports/index.js:456
+msgid "Allow block locking/unlocking by a user."
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/title/index.js:74
+msgid "Block Name"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/wizard/index.js:190
+msgid "Choose Template"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/wizard/index.js:198
+msgid "Set Block Title"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/wizard/index.js:206
+msgid "Set Additional Options"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/wizard/index.js:250
+msgid "Title"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/wizard/index.js:287
+msgid "Previous Step"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/wizard/index.js:292
+msgid "Skip Setup Wizard"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/wizard/index.js:306
+msgid "Finish"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/wizard/index.js:307
+msgid "Continue"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/wizard/templates.js:36
+msgid "Hero"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/wizard/templates.js:128
+msgid "Testimonials"
+msgstr ""
+
+#: core-plugin/assets/block-builder/boxes/wizard/templates.js:271
+msgid "Alert"
+msgstr ""
+
+#: core-plugin/assets/components/block-slug/index.js:58
+#: core-plugin/assets/components/pro-notice/index.js:34
+msgid "Upgrade Now"
+msgstr ""
+
+#: core-plugin/assets/components/document-tabs/index.js:76
+#: core-plugin/assets/components/document-tabs/index.js:78
+msgid "Control"
+msgstr ""
+
+#: core-plugin/assets/components/icon-picker/index.js:86
+msgid "Search Icon"
+msgstr ""
+
+#: core-plugin/assets/components/icon-picker/index.js:244
+msgid "No icons found."
+msgstr ""
+
+#: core-plugin/assets/components/icon-picker/index.js:323
+msgid "Icon Picker"
+msgstr ""
+
+#. Translators: %s - error text.
+#: core-plugin/assets/components/preview-server-callback/index.js:236
+#, js-format
+msgid "Error loading block preview: %s"
+msgstr ""
+
+#. Translators: %s - block slug.
+#: core-plugin/assets/components/preview-server-callback/render-block-content.js:186
+#, js-format
+msgid "Only a single <InnerBlocks /> component can be used per block. Multiple <InnerBlocks /> found inside block \"%s\"."
+msgstr ""
+
+#: core-plugin/assets/components/pro-notice/index.js:38
+msgid "Custom block collections and slug namespaces"
+msgstr ""
+
+#: core-plugin/assets/components/pro-notice/index.js:44
+msgid "Controls Conditional Logic"
+msgstr ""
+
+#: core-plugin/assets/components/pro-notice/index.js:46
+msgid "Panels and Dividers"
+msgstr ""
+
+#: core-plugin/assets/components/pro-notice/index.js:48
+msgid "Posts, Taxonomy, User Controls"
+msgstr ""
+
+#: core-plugin/assets/components/pro-notice/index.js:53
+msgid "Blocks Preloading"
+msgstr ""
+
+#: core-plugin/assets/components/pro-notice/index.js:54
+msgid "SEO Enhancements"
+msgstr ""
+
+#: core-plugin/assets/components/pro-notice/index.js:61
+msgid "And much more…"
+msgstr ""
+
+#: core-plugin/assets/components/render-controls/index.js:338
+msgid "Custom fields are not enabled for this post type. Enable \"custom-fields\" support to use this control."
+msgstr ""
+
+#: core-plugin/assets/components/render-controls/index.js:343
+msgid "Learn how"
+msgstr ""
+
+#: core-plugin/assets/editor/blocks/free/index.js:16
+msgid "Free Content"
+msgstr ""
+
+#: core-plugin/assets/editor/blocks/free/index.js:17
+msgid "Block used for adding blocks inside it in cases when template locked from adding blocks."
+msgstr ""
+
+#: core-plugin/assets/editor/blocks/main/edit.js:102
+msgid "Some blocks on this page require attention before you can save."
+msgstr ""
+
+#: core-plugin/assets/editor/blocks/main/edit.js:330
+msgid "Edit Block"
+msgstr ""
+
+#. translators: %d: number of child controls.
+#: core-plugin/assets/editor/blocks/main/edit.js:355
+#, js-format
+msgid "Validation failed. %d control require attention."
+msgid_plural "Validation failed. %d controls require attention."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core-plugin/assets/editor/plugins/remove-block-with-saved-post-meta/index.js:145
+msgid "Remove post meta used by this block?"
+msgstr ""
+
+#: core-plugin/assets/editor/plugins/remove-block-with-saved-post-meta/index.js:150
+msgid "This block created metadata that is still saved in your post."
+msgstr ""
+
+#: core-plugin/assets/editor/plugins/remove-block-with-saved-post-meta/index.js:155
+msgid "Would you like to remove any of these meta fields?"
+msgstr ""
+
+#: core-plugin/assets/editor/plugins/remove-block-with-saved-post-meta/index.js:160
+msgid "Select post meta to remove:"
+msgstr ""
+
+#: core-plugin/assets/editor/plugins/remove-block-with-saved-post-meta/index.js:176
+msgid "Remove selected Meta"
+msgstr ""
+
+#: core-plugin/assets/utils/check-control-validity/index.js:36
+msgid "This control is required."
+msgstr ""
+
+#: core-plugin/controls/checkbox/script.js:131
+#: core-plugin/controls/color/script.js:69
+#: core-plugin/controls/toggle/script.js:41
+msgid "Alongside Text"
+msgstr ""
+
+#: core-plugin/controls/checkbox/script.js:150
+msgid "Checked by default"
+msgstr ""
+
+#: core-plugin/controls/checkbox/script.js:154
+msgid "Unchecked by default"
+msgstr ""
+
+#: core-plugin/controls/checkbox/script.js:221
+#: core-plugin/controls/radio/script.js:115
+#: core-plugin/controls/select/script.js:163
+msgid "Both (Array)"
+msgstr ""
+
+#: core-plugin/controls/classic_editor/tmce.js:63
+msgid "Open Editor"
+msgstr ""
+
+#: core-plugin/controls/classic_editor/tmce.js:67
+msgid "Editor"
+msgstr ""
+
+#: core-plugin/controls/color/script.js:70
+msgid "Displays text alongside the color indicator"
+msgstr ""
+
+#: core-plugin/controls/color/script.js:85
+msgid "Alpha Channel"
+msgstr ""
+
+#: core-plugin/controls/color/script.js:86
+msgid "Allow set semi-transparent colors"
+msgstr ""
+
+#: core-plugin/controls/color/script.js:103
+msgid "Color Palette"
+msgstr ""
+
+#: core-plugin/controls/color/script.js:104
+msgid "Display color palette with predefined colors"
+msgstr ""
+
+#: core-plugin/controls/color/script.js:138
+msgid "Array (Color + Slug)"
+msgstr ""
+
+#: core-plugin/controls/date_time/script.js:64
+msgid "Select Date"
+msgstr ""
+
+#: core-plugin/controls/date_time/script.js:69
+msgid "Select Date and Time"
+msgstr ""
+
+#: core-plugin/controls/date_time/script.js:74
+msgid "Select Time"
+msgstr ""
+
+#: core-plugin/controls/date_time/script.js:170
+msgid "Reset"
+msgstr ""
+
+#: core-plugin/controls/date_time/script.js:274
+msgid "Date"
+msgstr ""
+
+#: core-plugin/controls/date_time/script.js:296
+msgid "Time"
+msgstr ""
+
+#: core-plugin/controls/email/script.js:75
+#: core-plugin/controls/number/script.js:127
+#: core-plugin/controls/password/script.js:55
+#: core-plugin/controls/text/script.js:80
+#: core-plugin/controls/textarea/script.js:53
+msgid "Placeholder"
+msgstr ""
+
+#: core-plugin/controls/email/script.js:84
+#: core-plugin/controls/password/script.js:64
+#: core-plugin/controls/text/script.js:89
+#: core-plugin/controls/textarea/script.js:62
+msgid "Characters Limit"
+msgstr ""
+
+#: core-plugin/controls/email/script.js:85
+#: core-plugin/controls/password/script.js:65
+#: core-plugin/controls/text/script.js:90
+#: core-plugin/controls/textarea/script.js:63
+msgid "Maximum number of characters allowed. Leave blank to no limit."
+msgstr ""
+
+#: core-plugin/controls/file/file-control.js:55
+msgid "file"
+msgstr ""
+
+#: core-plugin/controls/file/file-control.js:111
+msgid "Remove File"
+msgstr ""
+
+#: core-plugin/controls/file/script.js:101
+msgid "Allowed Mime Types"
+msgstr ""
+
+#: core-plugin/controls/file/script.js:102
+msgid "If nothing selected, all file types will be allowed to use."
+msgstr ""
+
+#: core-plugin/controls/gallery/gallery-control.js:83
+msgid "images"
+msgstr ""
+
+#: core-plugin/controls/gallery/gallery-control.js:136
+msgid "Edit Gallery"
+msgstr ""
+
+#: core-plugin/controls/gallery/gallery-control.js:139
+msgid "Clear the gallery"
+msgstr ""
+
+#: core-plugin/controls/gallery/script.js:97
+#: core-plugin/controls/image/script.js:99
+msgid "Medium"
+msgstr ""
+
+#: core-plugin/controls/gallery/script.js:113
+#: core-plugin/controls/image/script.js:138
+msgid "Preview Size"
+msgstr ""
+
+#: core-plugin/controls/image/image-control.js:97
+msgid "image"
+msgstr ""
+
+#: core-plugin/controls/image/image-control.js:144
+msgid "Remove Image"
+msgstr ""
+
+#: core-plugin/controls/image/script.js:117
+msgid "Allow insert from URL"
+msgstr ""
+
+#: core-plugin/controls/image/script.js:118
+msgid "Will be added option that allow you to use custom URL to insert image"
+msgstr ""
+
+#: core-plugin/controls/inner_blocks/script.js:65
+msgid "The Inner Blocks control deprecated since v3.4.0, you should migrate to the <InnerBlocks /> component as this control will be removed in future plugin updates."
+msgstr ""
+
+#: core-plugin/controls/number/script.js:95
+#: core-plugin/controls/range/script.js:47
+msgid "Minimum Value"
+msgstr ""
+
+#: core-plugin/controls/number/script.js:106
+#: core-plugin/controls/range/script.js:58
+msgid "Maximum Value"
+msgstr ""
+
+#: core-plugin/controls/number/script.js:117
+#: core-plugin/controls/range/script.js:69
+msgid "Step Size"
+msgstr ""
+
+#: core-plugin/controls/radio/script.js:76
+#: core-plugin/controls/select/script.js:102
+msgid "Allow Null"
+msgstr ""
+
+#: core-plugin/controls/radio/script.js:77
+#: core-plugin/controls/select/script.js:103
+msgid "Allows you to reset selected option value to null"
+msgstr ""
+
+#: core-plugin/controls/repeater/repeater-control.js:199
+#: core-plugin/controls/repeater/script.js:286
+msgid "Row {{#}}"
+msgstr ""
+
+#: core-plugin/controls/repeater/repeater-control.js:350
+#: core-plugin/controls/repeater/script.js:300
+msgid "+ Add Row"
+msgstr ""
+
+#: core-plugin/controls/repeater/repeater-control.js:355
+msgid "Toggle all rows"
+msgstr ""
+
+#: core-plugin/controls/repeater/script.js:201
+msgid "Show Child Controls"
+msgstr ""
+
+#: core-plugin/controls/repeater/script.js:203
+msgid "Hide Child Controls"
+msgstr ""
+
+#. translators: %d: number of child controls.
+#: core-plugin/controls/repeater/script.js:207
+#, js-format
+msgid "Show %d Child Control"
+msgid_plural "Show %d Child Controls"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core-plugin/controls/repeater/script.js:285
+msgid "Row Label"
+msgstr ""
+
+#: core-plugin/controls/repeater/script.js:287
+msgid "Example: \"My row number {{#}} with inner control {{control_name}}\""
+msgstr ""
+
+#: core-plugin/controls/repeater/script.js:299
+msgid "Add Button Label"
+msgstr ""
+
+#: core-plugin/controls/repeater/script.js:312
+msgid "Minimum Rows"
+msgstr ""
+
+#: core-plugin/controls/repeater/script.js:324
+msgid "Maximum Rows"
+msgstr ""
+
+#: core-plugin/controls/repeater/script.js:336
+msgid "Collapsible Rows"
+msgstr ""
+
+#: core-plugin/controls/repeater/script.js:351
+msgid "Collapsed by Default"
+msgstr ""
+
+#: core-plugin/controls/select/component-choices.js:164
+msgid "Choices"
+msgstr ""
+
+#: core-plugin/controls/select/component-choices.js:165
+msgid "+ Add Choice"
+msgstr ""
+
+#: core-plugin/controls/toggle/script.js:42
+msgid "Displays text alongside the toggle"
+msgstr ""
+
+#: core-plugin/controls/toggle/script.js:56
+msgid "Checked"
+msgstr ""
+
+#: core-plugin/controls/undefined/script.js:25
+#: core-plugin/controls/undefined/script.js:40
+msgid "Looks like this control does not exists."
+msgstr ""

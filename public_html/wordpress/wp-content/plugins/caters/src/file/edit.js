@@ -1,0 +1,251 @@
+import { __ } from "@wordpress/i18n";
+import clsx from "clsx";
+import "./editor.scss";
+
+import {
+	BlockControls,
+	MediaPlaceholder,
+	BlockIcon,
+	useBlockProps,
+	InspectorControls,
+} from "@wordpress/block-editor";
+
+import {
+	ToolbarGroup,
+	ToolbarButton,
+	ToggleControl,
+	PanelBody,
+	__experimentalVStack as VStack,
+} from "@wordpress/components";
+
+import { file, trash } from "@wordpress/icons";
+import { humanFileSize } from "./functions.js";
+
+import { useState } from "@wordpress/element";
+
+// const ALLOWED_FILE_TYPES = [
+// 	"application/pdf",
+// 	"application/msword",
+// 	"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+// 	"application/vnd.ms-excel",
+// 	"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+// ];
+
+const ALLOWED_FILE_TYPES = [
+	// PDF
+	"application/pdf",
+
+	// Word
+	"application/msword", // .doc
+	"application/vnd.openxmlformats-officedocument.wordprocessingml.document", // .docx
+
+	// Excel
+	"application/vnd.ms-excel", // .xls
+	"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", // .xlsx
+
+	// CSV
+	"text/csv",
+	"application/csv",
+	"application/vnd.ms-excel",
+
+	// TXT
+	"text/plain",
+
+	// ZIP
+	"application/zip",
+	"application/x-zip-compressed",
+	"multipart/x-zip",
+
+	// RAR
+	"application/x-rar-compressed",
+	"application/octet-stream",
+	"application/vnd.rar",
+];
+
+const getPathInfo = (filePath) => {
+	const fileName = filePath.split("/").pop();
+	const fileParts = fileName.split(".");
+
+	return {
+		dirname: filePath.substring(0, filePath.lastIndexOf("/")) || "",
+		basename: fileName,
+		extension: fileParts.length > 1 ? fileParts.pop() : "",
+		filename: fileParts.join("."),
+	};
+};
+
+const fileIcon = {
+	pdf: (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			height="20"
+			width="20"
+			viewBox="0 0 512 512"
+		>
+			<path
+				fill="#e15151"
+				d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"
+			/>
+		</svg>
+	),
+	word: (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			height="20"
+			width="15"
+			viewBox="0 0 384 512"
+		>
+			<path
+				fill="#74C0FC"
+				d="M48 448L48 64c0-8.8 7.2-16 16-16l160 0 0 80c0 17.7 14.3 32 32 32l80 0 0 288c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-293.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0L64 0zm55 241.1c-3.8-12.7-17.2-19.9-29.9-16.1s-19.9 17.2-16.1 29.9l48 160c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l25-83.4 25 83.4c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l48-160c3.8-12.7-3.4-26.1-16.1-29.9s-26.1 3.4-29.9 16.1l-25 83.4-25-83.4c-3-10.2-12.4-17.1-23-17.1s-19.9 7-23 17.1l-25 83.4-25-83.4z"
+			/>
+		</svg>
+	),
+	excel: (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			height="20"
+			width="15"
+			viewBox="0 0 384 512"
+		>
+			<path
+				fill="#63E6BE"
+				d="M48 448L48 64c0-8.8 7.2-16 16-16l160 0 0 80c0 17.7 14.3 32 32 32l80 0 0 288c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-293.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0L64 0zm90.9 233.3c-8.1-10.5-23.2-12.3-33.7-4.2s-12.3 23.2-4.2 33.7L161.6 320l-44.5 57.3c-8.1 10.5-6.3 25.5 4.2 33.7s25.5 6.3 33.7-4.2L192 359.1l37.1 47.6c8.1 10.5 23.2 12.3 33.7 4.2s12.3-23.2 4.2-33.7L222.4 320l44.5-57.3c8.1-10.5 6.3-25.5-4.2-33.7s-25.5-6.3-33.7 4.2L192 280.9l-37.1-47.6z"
+			/>
+		</svg>
+	),
+};
+
+export default function Edit({ attributes, className, setAttributes }) {
+	const {
+		src,
+		ext,
+		fileName,
+		isShowExt,
+		isShowFileSize,
+		fileSize,
+		isShowFileIcon,
+	} = attributes;
+	const [cannotUpload, setCannotUpload] = useState(false);
+
+	// メディアから又はアップロードした画像を選択する
+	const onSelect = (media) => {
+		if (media.mime || media.mime_type) {
+			if (
+				ALLOWED_FILE_TYPES.includes(media.mime) ||
+				ALLOWED_FILE_TYPES.includes(media.mime_type)
+			) {
+				setAttributes({
+					src: media.url,
+					fileName: getPathInfo(media.url).filename,
+					ext: getPathInfo(media.url).extension,
+					fileSize: media.media_details?.filesize || media.filesizeInBytes,
+				});
+			} else setCannotUpload(true);
+		}
+	};
+
+	// ブロックの属性を設定する
+	const blockProps = useBlockProps({
+		className: clsx(className, "cwc-block-file"),
+	});
+
+	// 削除
+	const handleDelete = () => {
+		if (confirm("ファイルを削除します。よろしですか！")) {
+			setAttributes({
+				src: "",
+				ext: "",
+				fileName: "",
+				isShowExt: true,
+				isShowFileSize: true,
+				isShowFileIcon: true,
+				fileSize: null,
+			});
+		}
+		return false;
+	};
+
+	let getClassName = ext == "pdf" ? "pdf" : ext;
+	getClassName = ext == "docx" || ext == "doc" ? "word" : getClassName;
+	getClassName = ext == "xlsx" || ext == "xls" ? "excel" : getClassName;
+
+	return (
+		<>
+			<div {...blockProps}>
+				{src ? (
+					<>
+						{/* プロックの上にメニュー */}
+						<BlockControls>
+							<ToolbarGroup>
+								<ToolbarButton
+									icon={trash}
+									label="削除"
+									onClick={handleDelete}
+								/>
+							</ToolbarGroup>
+						</BlockControls>
+
+						{/* 右Sitebar */}
+						<InspectorControls>
+							<PanelBody title={__("設定", "cwc-blocks")} initialOpen={true}>
+								<ToggleControl
+									className="wp-block-file-ext-toggle"
+									label={__("拡張子を表示する", "cwc-block")}
+									checked={isShowExt}
+									onChange={(newValue) =>
+										setAttributes({ isShowExt: newValue })
+									}
+								/>
+								<ToggleControl
+									className="wp-block-file-icon-toggle"
+									label={__("アイコンを表示する", "cwc-block")}
+									checked={isShowFileIcon}
+									onChange={(newValue) =>
+										setAttributes({ isShowFileIcon: newValue })
+									}
+								/>
+								<ToggleControl
+									className="wp-block-file-size-toggle"
+									label={__("サイズを表示する", "cwc-block")}
+									checked={isShowFileSize}
+									onChange={(newValue) =>
+										setAttributes({ isShowFileSize: newValue })
+									}
+								/>
+							</PanelBody>
+						</InspectorControls>
+
+						<a href={src} target="_blank" className={`file-${getClassName}`}>
+							{isShowFileIcon && fileIcon[getClassName]}
+							{fileName}
+							{isShowExt && `.${ext}`}
+							{isShowFileSize && fileSize && `（${humanFileSize(fileSize)}）`}
+						</a>
+					</>
+				) : (
+					<MediaPlaceholder
+						icon={<BlockIcon icon={file} />}
+						labels={{
+							title: __("ファイルを選択する", "cwc-blocks"),
+							instructions: __(
+								"選択またはアップロードしたファイルを挿入します。",
+								"cwc-blocks",
+							),
+						}}
+						multiple={false}
+						accept=".pdf, .doc, .docx, .xls, .xlsx, .csv, .txt, .zip, .rar"
+						onSelect={onSelect}
+						allowedTypes={ALLOWED_FILE_TYPES}
+					>
+						{cannotUpload && (
+							<VStack spacing={3} className="components-placeholder__error">
+								{__("選択したファイルが利用できません。")}
+							</VStack>
+						)}
+					</MediaPlaceholder>
+				)}
+			</div>
+		</>
+	);
+}

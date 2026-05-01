@@ -1,0 +1,26 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+.cwc-block-heading {
+    padding: 5px;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+    *{
+        margin: 0;
+    }
+    &.align-left{
+        text-align: left;
+    }
+    &.align-center{
+        text-align: center;
+    }
+    &.align-right{
+        text-align: right;
+    }
+}

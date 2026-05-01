@@ -1,0 +1,67 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "cwc/table",
+  "version": "0.1.0",
+  "category": "cwc-blocks",
+  "attributes": {
+    "caption": {
+      "type": "string",
+      "selector": "figcaption",
+      "default": ""
+    },
+    "border": {
+      "type": "integer",
+      "default": 1
+    },
+    "body": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "selector": "td,th",
+        "properties": {
+          "tag": {
+            "type": "string",
+            "source": "tag",
+            "default": "td"
+          },
+          "align": {
+            "type": "string",
+            "default": "left"
+          },
+          "colspan": {
+            "type": "string",
+            "source": "attribute",
+            "attribute": "colspan"
+          },
+          "rowspan": {
+            "type": "string",
+            "source": "attribute",
+            "attribute": "rowspan"
+          },
+          "content": {
+            "type": "rich-text",
+            "source": "rich-text",
+            "default": ""
+          }
+        }
+      }
+    }
+  },
+  "supports": {
+    "html": false,
+    "className": true,
+    "customClassName": false,
+    "anchor": false,
+    "background": {
+      "backgroundImage": false,
+      "backgroundSize": false
+    },
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

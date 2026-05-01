@@ -1,0 +1,131 @@
+$alert-red: #cc1818;
+
+.lzb-block-builder-controls-item-settings-conditional-logic {
+	.lzb-block-builder-controls-item-settings-conditional-logic-item {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: -5px;
+		margin-bottom: 10px;
+		margin-left: -5px;
+
+		> div {
+			flex: 1;
+			margin-right: 5px;
+			margin-bottom: 0;
+			margin-left: 5px;
+		}
+
+		.components-select-control {
+			width: auto;
+			min-width: 100%;
+			margin-right: -1px;
+			margin-left: 1px;
+		}
+
+		> :not(:first-child) .components-input-control__backdrop {
+			border-bottom-right-radius: 0;
+		}
+
+		> .components-base-control {
+			min-width: 150px;
+			padding-left: 18px;
+			margin-bottom: 0;
+
+			input,
+			.components-input-control__container {
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+
+			&:first-child input,
+			&:first-child .components-input-control__container {
+				border-bottom-right-radius: 0;
+			}
+
+			+ .components-base-control input,
+			+ .components-base-control .components-input-control__container,
+			+ .components-base-control .components-input-control__backdrop {
+				border-top: none;
+				border-top-right-radius: 0;
+			}
+		}
+
+		.components-base-control__field {
+			margin-bottom: 0;
+		}
+
+		input::placeholder {
+			color: #a0a0a0 !important;
+		}
+	}
+
+	.lzb-block-builder-controls-item-settings-conditional-logic-item-dragging {
+		z-index: 2;
+	}
+
+	.lzb-block-builder-controls-item-settings-conditional-logic-item-handler {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 5px;
+		display: flex;
+		align-items: center;
+		width: 20px;
+		padding: 0;
+		margin: 0 !important;
+		color: #fff;
+		text-align: center;
+		cursor: grab;
+		background-color: #1e1e1e;
+		border-top-left-radius: 2px;
+		border-bottom-left-radius: 2px;
+		transition: 0.15s background-color ease-in-out;
+
+		&:hover {
+			background-color: #007cba;
+		}
+
+		svg {
+			width: 1.5em;
+			height: 1.5em;
+		}
+	}
+
+	.lzb-block-builder-controls-item-settings-conditional-logic-item-remove {
+		position: absolute;
+		top: 50%;
+		right: -5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 20px;
+		height: 20px;
+		padding: 0;
+		margin-top: -10px;
+		color: #1e1e1e;
+		cursor: pointer;
+		background-color: #fff;
+		border: none;
+		border: 1px solid #757575;
+		border-radius: 50%;
+		opacity: 0;
+		transition: 0.15s opacity ease-in-out, 0.15s color ease-in-out, 0.15s background-color ease-in-out, 0.15s border-color ease-in-out;
+
+		svg {
+			width: 1em;
+			height: 1em;
+		}
+
+		&:hover,
+		&:focus {
+			color: #fff;
+			background-color: $alert-red;
+			border-color: $alert-red;
+		}
+	}
+
+	.lzb-block-builder-controls-item-settings-conditional-logic-item:hover .lzb-block-builder-controls-item-settings-conditional-logic-item-remove {
+		opacity: 1;
+	}
+}

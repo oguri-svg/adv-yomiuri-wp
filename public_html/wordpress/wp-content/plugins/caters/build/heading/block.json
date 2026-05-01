@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "cwc/heading",
+  "version": "0.1.0",
+  "category": "cwc-blocks",
+  "attributes": {
+    "text": {
+      "type": "string",
+      "default": ""
+    },
+    "align": {
+      "type": "string",
+      "default": "left"
+    },
+    "level": {
+      "type": "number",
+      "default": 2
+    },
+    "levelOptions": {
+      "type": "array",
+      "default": [
+        2,
+        3,
+        4
+      ]
+    },
+    "isIndex": {
+      "type": "boolean",
+      "default": false
+    },
+    "customId": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "className": true,
+    "customClassName": false,
+    "anchor": false,
+    "background": {
+      "backgroundImage": true,
+      "backgroundSize": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

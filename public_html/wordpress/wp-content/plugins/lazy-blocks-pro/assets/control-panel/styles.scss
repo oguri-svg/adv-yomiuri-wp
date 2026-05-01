@@ -1,0 +1,58 @@
+// Add .wp-block class to override styles added in the Core plugin.
+.wp-block.lazyblock {
+	.lzb-content-title {
+		margin-bottom: 0;
+		border-bottom: 0;
+	}
+
+	.lzb-content-controls {
+		display: block;
+		margin-right: -20px;
+		margin-bottom: 0;
+		margin-left: -20px;
+
+		.components-panel__body-toggle.components-button {
+			padding: 16px 48px 16px 16px;
+		}
+	}
+
+	.lzb-gutenberg-repeater-item-content {
+		margin-left: 0;
+	}
+
+	// Support for columns.
+	.lzb-content-controls > .lzb-pro-control_panel,
+	.lzb-gutenberg-repeater-item-content > .lzb-pro-control_panel {
+		flex: 1;
+
+		> div {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: calc(-1 * var(--lzb-controls-columns-gap));
+			margin-left: calc(-1 * var(--lzb-controls-columns-gap));
+
+			> div > div {
+				margin-bottom: var(--lzb-controls-columns-gap);
+				margin-left: var(--lzb-controls-columns-gap);
+			}
+		}
+	}
+}
+
+.lzb-pro-control_panel .components-panel__body-toggle .components-panel__icon {
+	display: inline-flex;
+
+	svg {
+		width: 20px;
+		height: auto;
+	}
+}
+
+.lzb-block-builder {
+	[data-control-type="panel"] {
+		margin-top: 40px;
+	}
+	.lzb-block-builder-controls-item-wrap:first-child > [data-control-type="panel"] {
+		margin-top: 0;
+	}
+}

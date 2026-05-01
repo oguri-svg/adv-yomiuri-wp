@@ -1,0 +1,53 @@
+# Copyright (C) 2025
+# This file is distributed under the same license as the Caters Blocks plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Caters Blocks\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cwc-blocks\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-02-07T10:12:38+09:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: cwc-blocks\n"
+
+#. Plugin Name of the plugin
+msgid "Caters Blocks"
+msgstr ""
+
+#. Description of the plugin
+msgid "Add inner block and video block"
+msgstr ""
+
+#: build/video/index.js:127
+#: src/video/edit.js:67
+#: build/video/index.js:81
+msgid "Upload a video file, pick one from your media library, or add one with a URL."
+msgstr ""
+
+#: build/video/index.js:1823
+#: src/video/index.js:11
+#: build/video/index.js:1571
+msgid "Video"
+msgstr ""
+
+#: build/video/index.js:1825
+#: src/video/index.js:13
+#: build/video/index.js:1573
+msgid "Embed a video from your media library or upload a new one."
+msgstr ""
+
+#: build/wrapper/index.js:1683
+#: src/wrapper/index.js:11
+#: build/wrapper/index.js:1470
+msgid "Inner block"
+msgstr ""
+
+#: build/wrapper/index.js:1685
+#: src/wrapper/index.js:13
+#: build/wrapper/index.js:1472
+msgid "Group all block"
+msgstr ""

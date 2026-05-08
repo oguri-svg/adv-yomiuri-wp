@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Cache
+.cache/
+
+# Source maps
+*.map
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+#.DS_Store
+#Thumbs.db
+
+# Env
+#.env
+
+# WP
+#debug.log
